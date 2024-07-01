@@ -41,7 +41,7 @@ describe('searchFunctionalityTests', () => {
     cy.get('.btn_search').contains('Search').click(); // Ensure the selector is correct for the search button
 
     // Assertion: Verify that menu items are present in the search results
-    cy.get('.menuItem') // Replace with the actual selector for menu items
-      .should('have.length.greaterThan', 0); // Ensure there is at least one menu item
+    cy.get('.animated > .row') // Replace with the actual selector for menu items
+      .should('be.visible'); // Ensure there is at least one menu item
   });
 });
